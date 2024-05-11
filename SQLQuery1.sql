@@ -1,0 +1,23 @@
+--create table administrators(
+--	Id int identity(1,1),
+--	Tcno int primary key not null,
+--	Username nvarchar(255) not null,
+--	Passworld nvarchar(255) not null
+--)
+--create table clients(
+--	Id int identity(1,1),
+--	Tcno int primary key not null,
+--	Username nvarchar(255) not null,
+--	Passworld nvarchar(255) not null,
+--	Firstname nvarchar(255) not null,
+--	Lastname nvarchar (255) not null,
+--	Telno int not null
+--)
+--INSERT INTO administrators (Tcno, Username, Passworld)
+--VALUES (1234, 'burak', '1234');
+--INSERT INTO administrators (Tcno, Username, Passworld)
+--VALUES (5678, 'ali', '1234');
+--INSERT INTO administrators (Tcno, Username, Passworld)
+--VALUES (91011, 'serdar', '1234');
+--select @@SERVERNAME
+
