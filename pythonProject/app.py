@@ -6,10 +6,10 @@ app = Flask(__name__)
 app.secret_key = secrets.token_hex(16)
 
 # Database connection details
-DRIVER_NAME = 'SQL SERVER'
-SERVER_NAME = 'DESKTOP-USG4TN3'
-DATABASE_NAME = 'FIKODVD'
-username = 'DESKTOP-USG4TN3/Admin'
+DRIVER_NAME = ''
+SERVER_NAME = ''
+DATABASE_NAME = ''
+username = ''
 password = ''
 
 # Connection string with Trusted_Connection=yes for Windows authentication
