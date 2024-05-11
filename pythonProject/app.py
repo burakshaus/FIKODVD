@@ -5,10 +5,10 @@ app = Flask(__name__)
 app.secret_key = 'your_secret_key_here'
 
 # Database connection details
-DRIVER_NAME = 'SQL SERVER'
-SERVER_NAME = 'DESKTOP-USG4TN3'
-DATABASE_NAME = 'FIKODVD'
-username = 'DESKTOP-USG4TN3/Admin'
+DRIVER_NAME = 'your drivername'
+SERVER_NAME = 'your servername'
+DATABASE_NAME = 'your database name'
+username = 'your username'
 password = ''
 
 # Connection string with Trusted_Connection=yes for Windows authentication
