@@ -9,11 +9,11 @@ app = Flask(__name__)
 app.secret_key = secrets.token_hex(16)
 
 # Database connection details
-DRIVER_NAME = 'SQL SERVER'
-SERVER_NAME = 'DESKTOP-USG4TN3'
-DATABASE_NAME = 'FIKODVD'
-username = 'DESKTOP-USG4TN3/Admin'
-password = ''
+DRIVER_NAME = 'your_driver_name'
+SERVER_NAME = 'your_server_name'
+DATABASE_NAME = 'your_database_name'
+username = 'your_user_name'
+password = 'your_password'
 
 # Connection string with Trusted_Connection=yes for Windows authentication
 connection_string = f"DRIVER={{{DRIVER_NAME}}};SERVER={SERVER_NAME};DATABASE={DATABASE_NAME};Trusted_Connection=yes;"
