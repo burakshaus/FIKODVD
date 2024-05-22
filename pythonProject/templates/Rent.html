@@ -1,0 +1,52 @@
+<!-- templates/rent.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rent DVD</title>
+    <!-- Include your CSS and Bootstrap links here -->
+</head>
+<body>
+    <!-- Your navigation bar here -->
+    <h1>Rent DVD</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <form method="POST">
+                    <input type="hidden" name="dvd_id" value="{{ dvd_id }}">
+                    <div class="form-group">
+                        <label for="tcno">TC Kimlik No:</label>
+                        <input type="text" class="form-control" id="tcno" name="tcno" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">İsim:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="surname">Soyisim:</label>
+                        <input type="text" class="form-control" id="surname" name="surname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefon:</label>
+                        <input type="text" class="form-control" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="rent_date">Alış Tarihi:</label>
+                        <input type="date" class="form-control" id="rent_date" name="rent_date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="return_date">İade Tarihi:</label>
+                        <input type="date" class="form-control" id="return_date" name="return_date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="rent_days">Kiralama Süresi (Gün):</label>
+                        <input type="number" class="form-control" id="rent_days" name="rent_days" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Kirala</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
