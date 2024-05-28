@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <style>
+    /* Your CSS styles here */
+    html,
+    body {
+      height: 100%;
+    }
+
+    .form-signup {
+      max-width: 330px;
+      padding: 15px;
+      margin: auto; /* Center align the form */
+      margin-top: 50px; /* Adjust top margin as needed */
+    }
+
+    .form-signup .form-floating:focus-within {
+      z-index: 2;
+    }
+
+    .form-signup input[type="email"],
+    .form-signup input[type="password"],
+    .form-signup input[type="text"] {
+      margin-bottom: 10px;
+    }
+
+    .form-signup input[type="email"],
+    .form-signup input[type="password"] {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    .form-signup input[type="text"] {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">FIKODVD</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="admin">Home</a>
+            <a class="nav-item nav-link" href="signup">Signup</a>
+            <a class="nav-item nav-link" href="listdvd">Dvd's</a>
+            <a class="nav-item nav-link" href="list_dvd_rentals">Rentals</a>
+            <a class="nav-item nav-link" href="list_clients">Clients</a>
+            <a class="nav-item nav-link" href="analysis">Analysis</a>
+            <a class="nav-item nav-link" href="home">Logout</a>
+        </div>
+    </div>
+</nav>
+  <div class="container" id="main-content">
+    <div class="d-flex justify-content-center">
+      <div class="col-md-4">
+        <form class="form-signup" method="POST" action="/signup">
+  <h1 class="h3 mb-3 fw-normal">Sign Up</h1>
+  <div class="form-floating">
+    <input type="text" class="form-control" id="tcno" name="tcno" placeholder="Tcno" required>
+    <label for="tcno">Tcno</label>
+  </div>
+  <div class="form-floating">
+    <input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
+    <label for="username">Username</label>
+  </div>
+  <div class="form-floating">
+    <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+    <label for="password">Password</label>
+  </div>
+  <button class="w-100 btn btn-lg btn-primary" type="submit">Sign Up</button>
+</form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
